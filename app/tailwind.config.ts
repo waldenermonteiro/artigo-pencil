@@ -1,10 +1,22 @@
 import type { Config } from 'tailwindcss'
 
 export default {
-  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  content: ['./index.html', './src/**/*.{vue,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#7C3AED',
+        accent: '#06B6D4',
+        dark: {
+          DEFAULT: '#111827',
+          card: '#1F2937',
+        },
+        muted: '#6B7280',
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 } satisfies Config
-
