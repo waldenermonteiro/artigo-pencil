@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import SectionHeader from '../ui/SectionHeader.vue'
 import avatarAna from '../../assets/images/avatar-ana.png'
 import avatarCarlos from '../../assets/images/avatar-carlos.png'
 import avatarMariana from '../../assets/images/avatar-mariana.png'
@@ -39,10 +40,12 @@ const testimonials: Testimonial[] = [
 <template>
   <section class="bg-white px-4 py-16 lg:px-16 lg:py-20">
     <div class="mx-auto max-w-6xl flex flex-col gap-12">
-      <div class="flex flex-col gap-3 text-center">
-        <h2 class="text-2xl font-bold text-dark lg:text-3xl">Quem já transformou a carreira</h2>
-        <p class="text-base text-muted lg:text-lg">Mais de 5.000 alunos já deram o primeiro passo</p>
-      </div>
+      <SectionHeader
+        title="Quem já transformou a carreira"
+        subtitle="Mais de 5.000 alunos já deram o primeiro passo"
+        align="center"
+        theme="light"
+      />
 
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
         <div

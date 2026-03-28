@@ -10,7 +10,7 @@ const props = withDefaults(defineProps<{
   iconSize?: number
   textClass?: string
 }>(), {
-  iconColor: '#7C3AED',
+  iconColor: 'var(--color-primary)',
   iconSize: 24,
   textClass: 'text-gray-700',
 })

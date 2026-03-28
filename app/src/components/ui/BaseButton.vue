@@ -12,6 +12,7 @@ withDefaults(defineProps<{
 
 <template>
   <button
+    type="button"
     :class="[
       'inline-flex cursor-pointer items-center gap-2 rounded-xl px-6 py-3.5 text-base font-semibold transition-all duration-200',
       variant === 'primary'

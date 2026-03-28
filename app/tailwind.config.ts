@@ -16,6 +16,9 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(135deg, var(--color-primary), var(--color-accent))',
+      },
     },
   },
   plugins: [],

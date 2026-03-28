@@ -15,13 +15,15 @@ defineEmits<{
 <template>
   <div class="overflow-hidden rounded-xl bg-white shadow-sm shadow-black/[0.06]">
     <button
+      type="button"
+      :aria-expanded="isOpen"
       class="flex w-full cursor-pointer items-center justify-between gap-3 px-6 py-5 text-left"
       @click="$emit('toggle')"
     >
       <span class="text-base font-semibold text-dark">{{ question }}</span>
       <ChevronDown
         :size="20"
-        color="#7C3AED"
+        color="var(--color-primary)"
         :class="['shrink-0 transition-transform duration-200', isOpen && 'rotate-180']"
       />
     </button>

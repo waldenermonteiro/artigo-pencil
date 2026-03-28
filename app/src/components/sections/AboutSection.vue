@@ -40,7 +40,7 @@ const benefits = [
             :key="feat.text"
             class="flex items-center gap-4"
           >
-            <component :is="feat.icon" :size="24" color="#7C3AED" class="shrink-0" />
+            <component :is="feat.icon" :size="24" color="var(--color-primary)" class="shrink-0" />
             <span class="text-base font-medium text-gray-700">{{ feat.text }}</span>
           </div>
         </div>
@@ -58,11 +58,11 @@ const benefits = [
               class="flex items-start gap-3"
             >
               <span class="text-base font-bold text-white">✓</span>
-              <span class="text-[15px] leading-snug text-[#EDE9FE]">{{ ben }}</span>
+              <span class="text-[15px] leading-snug text-violet-100">{{ ben }}</span>
             </div>
           </div>
 
-          <button class="w-full rounded-xl bg-white py-3.5 text-center text-base font-bold text-primary transition-colors hover:bg-gray-50">
+          <button type="button" class="w-full rounded-xl bg-white py-3.5 text-center text-base font-bold text-primary transition-colors hover:bg-gray-50">
             Garantir minha vaga →
           </button>
         </div>

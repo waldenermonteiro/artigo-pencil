@@ -42,13 +42,14 @@ const bonuses = [
             :key="bonus"
             class="flex items-center gap-3"
           >
-            <CircleCheck :size="20" color="#06B6D4" class="shrink-0" />
+            <CircleCheck :size="20" color="var(--color-accent)" class="shrink-0" />
             <span class="text-[15px] text-gray-300">{{ bonus }}</span>
           </div>
         </div>
 
         <!-- CTA Button -->
         <button
+          type="button"
           class="flex w-full items-center justify-center gap-2 rounded-xl bg-primary py-4 text-lg font-semibold text-white shadow-xl shadow-primary/30 transition-colors hover:bg-primary/90"
         >
           Garantir minha vaga agora

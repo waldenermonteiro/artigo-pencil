@@ -16,8 +16,7 @@ const trustSignals: TrustSignal[] = [
 
 <template>
   <section
-    class="px-4 py-20 lg:px-16"
-    style="background-image: linear-gradient(135deg, #7C3AED, #06B6D4)"
+    class="bg-gradient-primary px-4 py-20 lg:px-16"
   >
     <div class="mx-auto max-w-6xl flex flex-col items-center gap-8 text-center">
 
@@ -34,12 +33,14 @@ const trustSignals: TrustSignal[] = [
       <!-- Buttons -->
       <div class="flex flex-wrap items-center justify-center gap-4">
         <button
+          type="button"
           class="flex items-center gap-2 rounded-xl bg-white px-8 py-5 text-lg font-bold text-primary shadow-xl shadow-black/20 transition-colors hover:bg-gray-50"
         >
           Quero começar agora
           <ArrowRight :size="18" />
         </button>
         <button
+          type="button"
           class="rounded-xl border border-white/50 px-8 py-5 text-base font-medium text-white transition-colors hover:bg-white/10"
         >
           Ver o programa completo

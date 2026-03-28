@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { Briefcase, Terminal, Compass } from 'lucide-vue-next'
 import type { Component } from 'vue'
+import SectionHeader from '../ui/SectionHeader.vue'
 
 interface Pain {
   icon: Component
@@ -30,14 +31,12 @@ const pains: Pain[] = [
 <template>
   <section class="bg-white px-4 py-16 lg:px-16 lg:py-20">
     <div class="mx-auto max-w-6xl flex flex-col gap-10">
-      <div class="flex flex-col gap-3 text-center">
-        <h2 class="text-2xl font-bold text-dark lg:text-3xl">
-          Você se identifica com algum desses cenários?
-        </h2>
-        <p class="text-base text-muted lg:text-lg">
-          Não está sozinho — a maioria dos devs passa por isso antes de dar a virada.
-        </p>
-      </div>
+      <SectionHeader
+        title="Você se identifica com algum desses cenários?"
+        subtitle="Não está sozinho — a maioria dos devs passa por isso antes de dar a virada."
+        align="center"
+        theme="light"
+      />
 
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
         <div
@@ -45,7 +44,7 @@ const pains: Pain[] = [
           :key="pain.title"
           class="flex flex-col gap-4 rounded-2xl border-l-4 border-primary bg-white p-6 shadow-lg shadow-black/[0.06]"
         >
-          <component :is="pain.icon" :size="32" color="#7C3AED" />
+          <component :is="pain.icon" :size="32" color="var(--color-primary)" />
           <h3 class="text-lg font-semibold text-dark">{{ pain.title }}</h3>
           <p class="text-sm leading-[1.5] text-muted">{{ pain.description }}</p>
         </div>
